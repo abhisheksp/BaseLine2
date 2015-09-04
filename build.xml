@@ -18,7 +18,9 @@
                 <pathelement location="lib/hamcrest-core-1.3.jar"/>
                 <pathelement location="out"/>
             </classpath>
-            <test name="com.thoughtworks.salestax.TestProduct"/>
+            <test name="com.thoughtworks.salestax.InputReaderTest"/>
+            <test name="com.thoughtworks.salestax.ItemTest"/>
+            <test name="com.thoughtworks.salestax.ParserTest"/>
         </junit>
     </target>
 </project>

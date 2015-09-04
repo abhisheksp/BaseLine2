@@ -12,4 +12,11 @@ public class ItemTest {
 
         assertEquals(12.49, item.netAmount(), 0.0001);
     }
+
+    @Test
+    public void shouldReturnNetAmountSameAsTenPercentOfBaseAmountGivenItemIsNotExemptedAndNotImported() {
+        Item item = new Item("chocolate", 12.49, false, false);
+
+        assertEquals(12.49 + (10 * 12.49 / 100), item.netAmount(), 0.0001);
+    }
 }
